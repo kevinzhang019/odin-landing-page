@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -33,8 +35,9 @@ a,
     display: flex;
     flex-direction: column;
     padding: 18px 208px;
+    padding-bottom: 130px;
     gap: 120px;
-    min-height: 500px;
+    flex: 1;
 }
 
 .main-content {
@@ -72,4 +75,120 @@ a,
 .nav-bar {
     display: flex;
     align-items: baseline;
+}
+
+.information-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 208px;
+    gap: 50px;
+}
+
+.information-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+}
+
+.information-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+    align-self: center;
+}
+
+.information-card {
+    flex: 0 0 170px;
+}
+
+.information-text {
+    color: #707272;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card {
+    width: 166px;
+    height: 166px;
+    border: #3882F6;
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.quote-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 120px 300px;
+}
+
+.quote {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote-cred {
+    font-weight: 700;
+    font-size: 24px;
+    color: #10151c;
+    align-self: flex-end;
+}
+
+.cta-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 208px;
+}
+
+.cta-card {
+    background-color: #3882F6;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 1100px;
+    height: 150px;
+}
+
+.cta-card .sign-up {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0;
+}
+
+.cta-main-text {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.cta-subtext {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.footer {
+    flex: 1;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.footer-text {
+    color: #E5E7EB;
+    font-size: 18px;
 }
